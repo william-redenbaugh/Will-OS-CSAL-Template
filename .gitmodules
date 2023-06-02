@@ -1,0 +1,3 @@
+[submodule "WillOS-CSAL-Example/lib/TeensyOS"]
+	path = WillOS-CSAL-Example/lib/TeensyOS
+	url = git@github.com:william-redenbaugh/TeensyOS.git

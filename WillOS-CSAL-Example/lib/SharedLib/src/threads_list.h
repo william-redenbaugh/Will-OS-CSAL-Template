@@ -1,0 +1,13 @@
+#ifndef _THREADS_LIST_H
+#define _THREADS_LIST_H
+
+#include "CSAL/CSAL_SHARED/event_management.hpp"
+#include "enabled_modules.h"
+
+#define INIT_THREAD_LIST                                                                                                \
+    (task_init_descriptor_t[]){                                                                                         \
+        {event_management_thread, event_management_init, "Event Management Thread", 2048, NULL, 0, NULL},               \
+    }                                                                                                                   \
+
+extern int NUM_THREADS;
+#endif
